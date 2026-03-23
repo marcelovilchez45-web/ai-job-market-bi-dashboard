@@ -13,12 +13,8 @@ El objetivo es identificar patrones de demanda laboral, evolución salarial y ha
 ## 🗄️ Modelo de Datos
 Se implementó un modelo tipo Star Schema:
 
-* **Fact Table:**
-    * Fact_Postings
-* **Dimensiones:**
-    * Dim_Location
-    * Dim_Company
-    * Dim_Job_Roles
+* **Fact Table:** Fact_Postings
+* **Dimensiones:** Dim_Location, Dim_Company, Dim_Job_Roles
 
 ## ⚙️ Vistas SQL Implementadas
 * `vw_powerbi_master_audit` → Vista detallada
@@ -31,19 +27,18 @@ Se implementó un modelo tipo Star Schema:
 ## 📊 Dashboard
 
 ### 🔹 Página 1: Resumen del Mercado
+![Resumen del Mercado](Resumen.jpg)
+
 **KPIs principales:**
 * Total Ofertas
 * Oportunidades de Empleo
 * Salario Promedio
 * Vacantes por Oferta (Talent Demand Index)
 
-**Visualizaciones:**
-* Evolución de la demanda laboral
-* Tendencia salarial
-* Distribución por industria
-* Mapa de demanda por país
+---
 
 ### 🔹 Página 2: Análisis de Talento
+![Análisis de Talento](Analisis.jpg)
 
 * Habilidades más demandadas por rol
 * Salario promedio por rol
